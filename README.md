@@ -1,1 +1,3 @@
 - heroku login
+- git push heroku main
+- heroku logs --tail
