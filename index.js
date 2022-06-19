@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose')
 //! Import from File
 const authRouter = require('./routes/auth');
+const statusRouter = require('./routes/status');
 // DB Config
 require('dotenv').config();
 const DB = process.env.DATABASE_KEY;
@@ -16,6 +17,7 @@ const PORT = 3000; //localHost
 //! Client -> Server -> Clinet
 app.use(express.json());
 app.use(authRouter);
+app.use(statusRouter);
 
 // ! Connect database =>
 
