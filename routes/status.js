@@ -11,7 +11,7 @@ statusRouter.get('/', async (req, res) => {
         res.status(200).json({
             "Author": `${pjson.author}`,
             "Services": `${pjson.description}`,
-            "Status": "Its Working",
+            "Status": "🟢 Its Working",
             "Version": `${pjson.version}`
         })
     } catch (error) {
