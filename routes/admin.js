@@ -33,3 +33,5 @@ adminRoute.post('/admin/add-product', admin, async (req, res) => {
         
     }
 })
+
+module.exports = adminRoute;

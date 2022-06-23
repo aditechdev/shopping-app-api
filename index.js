@@ -1,6 +1,7 @@
 //! Import From Package
 const express = require('express');
 const mongoose = require('mongoose');
+const adminRoute = require('./routes/admin');
 //! Import from File
 const authRouter = require('./routes/auth');
 const statusRouter = require('./routes/status');
@@ -18,6 +19,7 @@ const PORT = process.env.PORT || 3000; //localHost
 app.use(express.json());
 app.use(authRouter);
 app.use(statusRouter);
+app.use(adminRoute);
 
 // ! Connect database =>
 
