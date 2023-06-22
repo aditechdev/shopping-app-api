@@ -1,3 +1,3 @@
-server/key/const.js
-server/.env
-server/node_modules
+# /key/const.js
+.env
+/node_modules
